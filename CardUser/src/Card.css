@@ -1,0 +1,20 @@
+.card {
+    border: 1px solid #ddd;
+    padding: 20px;
+    margin: 10px;
+    border-radius: 8px;
+    text-align: center;
+  }
+  .border {
+    border: 3px solid red;
+  }
+  .homme {
+    background-color: lightblue;
+  }
+  .femme {
+    background-color: pink;
+  }
+  .non-binaire {
+    background-color: rgb(38, 184, 27);
+  }
+  
