@@ -1,0 +1,10 @@
+.task span {
+    flex: 1;
+    text-align: left;
+  }
+  
+  .task .date {
+    font-size: 0.9rem;
+    color: #bbb;
+  }
+  

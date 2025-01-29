@@ -1,0 +1,157 @@
+/* Styles généraux */
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #282c34;
+  color: #f9f9f9;
+  margin: 0;
+  padding: 0;
+}
+
+/* Conteneur principal */
+.app {
+  text-align: center;
+  padding: 20px;
+}
+
+/* Titre principal */
+h1 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+/* Formulaire d'ajout de tâches */
+.task-form {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.task-form input {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  outline: none;
+  width: 200px;
+}
+
+.task-form button {
+  padding: 10px 15px;
+  border: none;
+  background-color: yellowgreen;
+  color: white;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.task-form button:hover {
+  background-color: green;
+}
+
+/* Filtre par catégories */
+.filter-form {
+  margin-bottom: 20px;
+}
+
+.filter-form select {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  background-color: rgb(11, 10, 10);
+  cursor: pointer;
+}
+
+/* Liste des tâches */
+.task-list {
+  list-style: none;
+  padding: 0;
+  color: #282c34;
+}
+
+/* Styles pour chaque tâche */
+.task {
+  margin: 10px auto;
+  padding: 10px 20px;
+  border-radius: 8px;
+  max-width: 500px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.3);
+  transition: transform 0.2s ease, background-color 0.3s ease;
+}
+
+.task:hover {
+  transform: scale(1.02);
+}
+
+/* Contenu des tâches */
+.task-content {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.category {
+  font-style: italic;
+  color: #bbb;
+}
+
+/* Couleurs des tâches */
+.task.green {
+  border-left: 5px solid yellowgreen;
+  background-color: #d9f2d9;
+}
+
+.task.orange {
+  border-left: 5px solid orange;
+  background-color: #ffd9b3;
+}
+
+/* Bouton de suppression */
+.delete-btn {
+  padding: 5px 10px;
+  border: none;
+  background-color: red;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.delete-btn:hover {
+  background-color: darkred;
+}
+
+/* Contrôles des heures */
+.task-controls {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  margin-top: 5px;
+}
+
+.task-controls button {
+  padding: 5px;
+  border: none;
+  border-radius: 50%;
+  background-color: lightgray;
+  color: black;
+  cursor: pointer;
+  width: 30px;
+  height: 30px;
+  text-align: center;
+  line-height: 20px;
+  transition: background-color 0.3s ease;
+}
+
+.task-controls button:hover {
+  background-color: gray;
+}
+
+.task-controls span {
+  font-size: 0.9rem;
+  font-weight: bold;
+}
